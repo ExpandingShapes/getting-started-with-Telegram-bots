@@ -1,12 +1,12 @@
-const TelegramBot = require("node-telegram-bot-api")//самое важное, не трогать
-const TOKEN = "363388082:AAGaR7-WC37xz4W5_TUujOJf8v86Md41_H0"//жетон, выданный телеграмом боту
+const TelegramBot = require("node-telegram-bot-api")
+const TOKEN = ""
 
 console.log("Бот запущен!")
 
 const bot = new TelegramBot(TOKEN, {
 	polling: {
 		interval: 300,
-		autoStart: true,//если нас писали когда бот был выкл, мы ответим на сообщение
+		autoStart: true,//если нам писали когда бот был выкл, мы ответим на сообщение
 		params: {
 			timeout: 10
 		}
